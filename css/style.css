@@ -1,0 +1,157 @@
+body {
+    font-size: 4vw;
+}
+/*header tags*/
+.nav-bar {
+    background-color: #555;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 0 black;
+}
+.nav-bar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 0.2em 0.25em;
+    text-decoration: none;
+    border-radius: 5%; 
+}
+.nav-bar a:hover {
+    color: #555;
+    background-color: #d3d3d3;
+}
+
+.nav-bar a:nth-child(1) {
+    float: left;
+}
+/*footer tags*/
+.footer {
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+}
+/*sidebar and sidebar content tags*/
+.side-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+.side-bar div {
+    text-align: center;
+    align-content: center;
+}
+.side-bar-center {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+.b-points p {
+    display: inline;
+    padding: 0.1em;
+    border: 0.25em solid black;
+}
+.w-points p {
+    display: inline;
+    padding: 0.1em;
+    border: 0.25em solid black;
+}
+.last-moves-display {
+    font-size: 1.5vw;
+    display: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-grow: 4;
+    padding: 2px;
+    border: 0.5em solid black;
+    border-radius: 5%;
+}
+/*main gameboard tags*/
+.squaring-div {
+    display: flex;
+    flex: 1 1;
+    height: 100%;
+    width: 100%;
+    
+}
+.board-container {
+    flex: 1 1;
+    justify-content: right;
+    padding: 4vw;
+    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-auto-rows: 1.5fr;
+    align-content: center;
+}
+.tile {
+    background-color:white;
+    border: 2px solid black;
+}
+.red {
+    background-color: #78150D;
+}
+.pink {
+    background-color: #ffcbc7;
+}
+.selected {
+    background-color: cornflowerblue;
+}
+.canMove {
+    background-color: greenyellow;
+}
+.enemy {
+    background-color: orangered;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*responsive*/
+@media (min-width: 480px) {
+    main {
+        height: 85%;
+    }
+}
+@media (min-width: 768px) {
+    main {
+        height: 100vh;
+        flex-direction: row;
+    }
+    body {
+        font-size: 1.8vw;
+    }
+    .board-container {
+        padding-top: 4vw;
+    }
+    .side-bar {
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-left: 5vw;
+    }
+    .last-moves-display {
+        display: inline;
+    }
+    .footer {
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding-right: 1em;
+      }
+}

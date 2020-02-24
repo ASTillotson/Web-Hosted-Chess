@@ -1,2 +1,5 @@
-# Web-Hosted-Chess
-This is a web hosted chess game I made using HTML, CSS, and Javascript. I got it to MVP, so it can support gameplay, but it is very rough. I hope to one day come back and update with newer technology.
+# Course Project
+
+This repository contains code for an interactive web app, created for the _Client-Side Web Development_ course at the UW iSchool.
+
+The site can be viewed at <https://info340a-wi19.github.io/project-yourusername/>
